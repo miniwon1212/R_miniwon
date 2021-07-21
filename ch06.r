@@ -11,7 +11,7 @@ plot(wt, mpg,
      pch=19)
 
 #코드6-2
-vars <- c("mpg", "disp", "drat", "wt")
+vars <- c("mpg", "disp", "drat", "wt") 
 target <- mtcars[,vars]
 head(target)
 pairs(target, main="Multi Plots")
@@ -74,6 +74,11 @@ library(mlbench)
 data("BostonHousing")
 
 #코드6-8
+#crim: 지역의 1인당 범죄율
+#rm: 주택 1가구당 방의 수
+#dis: 보스턴의 5개 직업 센터까지의 거리
+#tax: 재산세율
+#medv: 주택 가격
 ## (1) Prepare Data ----------------------
 library(mlbench)
 data("BostonHousing")
